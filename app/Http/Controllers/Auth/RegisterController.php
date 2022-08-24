@@ -72,11 +72,7 @@ class RegisterController extends Controller
         ]);
 
         $userDetails = UserDetail::create([
-            'user_id' => $user->id,
-            'address' => "",
-            'city' => "",
-            'province' => "",
-            'phone' => ""
+            'user_id' => $user->id
         ]);
 
         return $user;
